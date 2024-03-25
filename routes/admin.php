@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Admin\BlogController;
 use Illuminate\Support\Facades\Route;
-
+// for multiple page
 Route::get('/blogs',[BlogController::class,'home'])->name('blogs');
 Route::get('/blogs/index', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/create',[BlogController::class,'create'])->name('blogs.create');
